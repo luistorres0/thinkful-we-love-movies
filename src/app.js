@@ -8,6 +8,7 @@ const reviewsRouter = require("./reviews/reviews.router");
 const notFound = require("./errors/notFound");
 const errorHandler = require("./errors/errorHandler");
 
+console.log(process.env.PRODUCTION_DATABASE_URL);
 const app = express();
 
 app.use(cors());
